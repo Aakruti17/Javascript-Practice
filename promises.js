@@ -3,22 +3,22 @@
 // 	- If marks are greater than or equal to 35, resolve with "Student Passed".
 // 	- Otherwise, reject with "Student Failed".
 // 	Handle both success and failure using .then() and .catch().
-// let marks=50;
-// let result = new Promise((resolve,reject)=>{
-//     if(marks>35){
-//         resolve("Student passed");
-//     }
-//     else{
-//         reject("Student Failed");
-//     }
-// });
-// result
-// .then((message)=>{
-//     console.log(message)
-// })
-// .catch((error) =>{
-//     console.log(error);
-// });
+let marks=50;
+let result = new Promise((resolve,reject)=>{
+    if(marks>35){
+        resolve("Student passed");
+    }
+    else{
+        reject("Student Failed");
+    }
+});
+result
+.then((message)=>{
+    console.log(message)
+})
+.catch((error) =>{
+    console.log(error);
+});
 
 // Q2. Login Simulation
 // 	Create a function loginUser(username, password) that returns a Promise.
@@ -29,23 +29,23 @@
 // 	- Otherwise, reject with "Invalid Credentials".
 // 	Handle the response using .then() and .catch().
 
-// let username="admin";
-// let password="12345";
-// let loginUser = new Promise((resolve,reject)=>{
-//     if(username=="admin" && password=="12345"){
-//         resolve("login successful")
-//     }
-//     else{
-//         reject("login failed")
-//     }
-// });
-// loginUser
-// .then((message)=>{
-//     console.log(message)
-// })
-// .catch((message)=>{
-//     console.log(message)
-// })
+let username="admin";
+let password="12345";
+let loginUser = new Promise((resolve,reject)=>{
+    if(username=="admin" && password=="12345"){
+        resolve("login successful")
+    }
+    else{
+        reject("login failed")
+    }
+});
+loginUser
+.then((message)=>{
+    console.log(message)
+})
+.catch((message)=>{
+    console.log(message)
+})
 
 // Q3. Delayed Message
 // 	Create a Promise that resolves after 3 seconds with the message "Data fetched successfully".
